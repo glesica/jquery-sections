@@ -26,6 +26,7 @@
             sections            : {},
 
             containerclass      : '',
+            activeclass         : 'active',
 
             hidecontent         : false,
         };
@@ -51,6 +52,7 @@
                 $('<div />').addClass('jqs-contents')
             );
         
+        $container.data('activeclass', settings.activeclass);
         $container.data('sections', {});
         
         // Build the sections
@@ -98,7 +100,10 @@
     // Control functions
     
     var hide = function(title) {
-        this.data('sections')[title].data('content')
+        var activeclass = this.data('activeclass');
+        this.data('sections')[title]
+        .removeClass(activeclass)
+        .data('content')
         .slideUp('fast');
     }
     
@@ -112,8 +117,11 @@
     }
     
     var show = function(title) {
+        var activeclass = this.data('activeclass');
         hideAll.call(this);
-        this.data('sections')[title].data('content')
+        this.data('sections')[title]
+        .addClass(activeclass)
+        .data('content')
         .slideDown('fast');
     }
     
