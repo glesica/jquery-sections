@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/default.css" />
+        <link rel="stylesheet" href="css/demo.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.sections.js"></script>
+        <script type="text/javascript">
+            // Activate the plugin here.
+            $(function() {
+                $('#demo-container').sections({
+                    id: 1,
+                    target: '#demo-data',
+                    sections: {
+                        'Section 1': '.section1',
+                        'Section 2': '.section2',
+                        'Section 3': '.section3',
+                        'Section 4': '.section4',
+                    },
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>jQuery-sections Demo Page</h1>
+        <p>This page demonstrates a simple use of jQuery-sections.</p>
+        <div id="demo-container"></div>
+        <div id="demo-data">
+            <a href="#" class="section1">Section 1 Link 1</a>
+            <a href="#" class="section1">Section 1 Link 2</a>
+            <a href="#" class="section2">Section 2 Link 1</a>
+            <a href="#" class="section2">Section 2 Link 2</a>
+            <a href="#" class="section3">Section 3 Link 1</a>
+            <a href="#" class="section3">Section 3 Link 2</a>
+            <a href="#" class="section4">Section 4 Link 1</a>
+            <a href="#" class="section4">Section 4 Link 2</a>
+        </div>
+    </body>
+</html>

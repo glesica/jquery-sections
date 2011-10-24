@@ -1,0 +1,74 @@
+/*
+    demo.css
+    Styles for jquery-headershow plugin demo page.
+    George Lesica <glesica@gmail.com>
+*/
+
+body {
+    background: #eee;
+    font-family: sans-serif;
+    padding: 0 0 2.0em 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    text-shadow: 2px 2px 5px #666;
+}
+
+/*
+    Set the container up in the right place and align things left.
+*/
+#demo-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#demo-container * {
+    text-align: left;
+}
+
+/*
+    Style the original information.
+*/
+#demo-data {
+    border: solid 1px #666;
+    margin: 2.0em auto 0 auto;
+    padding: 2.0em;
+    width: 600px;
+}
+
+/*
+    Override
+    Add to some of the default styles to make things presentable.
+*/
+
+.jqs-container {
+    background: none;
+    border: 2px solid #333;
+    box-shadow: 0.125em 0.125em 0.5em #333;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.jqs-title {
+    padding: 0.5em;
+    transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.jqs-title:first-child {
+    padding-left: 1.0em;
+}
+
+.jqs-title:last-child {
+    padding-right: 1.0em;
+}
+
+.jqs-title:hover {
+    background: #fff;
+}
+
+
